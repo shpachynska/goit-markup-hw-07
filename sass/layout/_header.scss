@@ -27,8 +27,8 @@
 }
 
 .nav-list__link,
-.header-mail-link,
-.header-tel-link {
+.header-contacts__mail,
+.header-contacts__tel {
   @extend %link;
   color: var(--title-color);
   font-weight: 500;

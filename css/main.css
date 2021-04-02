@@ -1,6 +1,6 @@
 .nav-list__link,
-.header-mail-link,
-.header-tel-link, .header-contacts__mail, .header-contacts__tel, .client-list__button, .logo, .portfolio-list__link, .address__link, .address__mail, .address__tel {
+.header-contacts__mail,
+.header-contacts__tel, .client-list__button, .logo, .portfolio-list__link, .address__link, .address__mail, .address__tel {
   text-decoration: none;
   display: block;
 }
@@ -106,8 +106,6 @@ body {
   border-radius: 50%;
   justify-content: center;
   align-items: center;
-  color: #afb1b8;
-  fill: currentColor;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -115,15 +113,24 @@ body {
   background-color: var(--accent-color);
 }
 
-.social-icon {
+.social-link_light-theme {
+  color: #afb1b8;
+  fill: currentColor;
+}
+
+.social-link_light-theme:hover, .social-link_light-theme:focus {
+  fill: var(--secondary-text-color);
+}
+
+.social-link_dark-theme {
+  color: var(--secondary-text-color);
+  fill: currentColor;
+}
+
+.social-link__icon {
   width: 20px;
   height: 20px;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.social-link:hover .social-icon,
-.social-link:focus .social-icon {
-  fill: var(--secondary-text-color);
 }
 
 .header {
@@ -157,8 +164,8 @@ body {
 }
 
 .nav-list__link,
-.header-mail-link,
-.header-tel-link {
+.header-contacts__mail,
+.header-contacts__tel {
   color: var(--title-color);
   font-weight: 500;
   font-size: 14px;
