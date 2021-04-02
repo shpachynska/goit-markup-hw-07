@@ -211,10 +211,6 @@ body {
   fill: currentColor;
 }
 
-.hero {
-  max-width: 1600px;
-}
-
 .hero__overlay {
   background-color: var(--dark-background);
   text-align: center;
